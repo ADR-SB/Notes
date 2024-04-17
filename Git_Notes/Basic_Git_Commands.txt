@@ -62,6 +62,12 @@ Checkout:
 
 	•	git checkout -b branchname
 		(Creates a new branch and checkouts to it) 
+
+	•	git checkout -b branchname origin/branchname
+		(This will create a new local branch named branchname that tracks the origin/branchname remote branch.
+		Usually done after cloaning an existing repo, ie when an existing repo with multiple branches are cloned there will not
+		be any local branch that will keeps track of the changes happining to the remote , so when we check out of the main branch 
+		we will create a new local branch that tracks the remote branch)
 ------------------------------------------------------------------------------------------------------------------------------------------
 Switch:	
 	Command:
@@ -136,4 +142,8 @@ Log:
 	•	git log --author=<author>: Filters the commit history to only show commits by a specific author.
 	•	git log --since=<date>: Filters the commit history to only show commits since a specific date.
 ------------------------------------------------------------------------------------------------------------------------------------------
+setting upstream tracking branch:
+	Command:
+		git branch --set-upstream-to=origin/newbranch newbranch
+		(Setting the upstream branch for the local branch newbranch to the remote branch origin/newbranch.)
 
