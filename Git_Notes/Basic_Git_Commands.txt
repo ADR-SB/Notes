@@ -146,4 +146,5 @@ setting upstream tracking branch:
 	Command:
 		git branch --set-upstream-to=origin/newbranch newbranch
 		(Setting the upstream branch for the local branch newbranch to the remote branch origin/newbranch.)
+------------------------------------------------------------------------------------------------------------------------------------------
 
