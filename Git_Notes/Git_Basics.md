@@ -17,27 +17,6 @@ There are many reasons for choosing Git.
 - Git is an open-source project and does not have any licensing costs. You may need licensing if you choose to use an established online provider or if you choose to purchase third-party tools, but the system itself does not have licensing costs.
 - Git is also easy to learn and can be very simple, but it offers complex features that you can take advantage of if you need them or as you grow and require more of their use.
 
-### Set Up Git
-
-To set up Git (and GitHub in a later step), you will be asked to provide an existing email address for the account. In most cases, you should use the same email address for both Git and GitHub. We also recommend that you use the email address associated with the Engage account you are using for this course.
-Configuring Your Username and Email
-You should use the same name and email address that you use for your GitHub account.
-
-To set up your Git identity on your computer:
-1. Open Git Bash (a Windows application installed with Git For Windows) or the Terminal application (macOS or Linux).
-2. Run the command to set your username:
-
-		git config --global user.name "username"
-
-3. Run the command to set your e-mail address:
-
-		git config --global user.email "email@domain.com"
-
-An example of this is:
-
-		git config --global user.name "Caitlin Stuart"
-		git config --global user.email "cstuart@email.com"
-
 # Basic Git Commands
 
 ## Add, Commit, Pull, Push
