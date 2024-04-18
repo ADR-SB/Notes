@@ -2,7 +2,7 @@
 This repository contains my personal notes on various topics, organized by subject for easy reference.
 
 ## Topics
-* [Git & GitHub](Git_Notes/)
+* [Git](Git_Notes/)
   * [Setting up Git](Git_Notes/setting_up_git.md)
   * [Basics of Git](Git_Notes/Git_Basics.md)
   * [Basic Git commands](Git_Notes/Basic_Git_Commands.md)
