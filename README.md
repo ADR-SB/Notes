@@ -10,4 +10,4 @@ This repository contains my personal notes on various topics, organized by subje
 * [Networking Basics](Networking_Notes/)
    * [Introduction to Networking](Networking_Notes/Introduction_to_Networking.md)
    * [Network Topologies](Networking_Notes/Network_Topologies.md)
-* Programming (Kotlin,java,python,etc)
+
