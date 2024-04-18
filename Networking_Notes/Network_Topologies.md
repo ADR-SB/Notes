@@ -8,12 +8,18 @@ There are two approaches to network topology:
 
 ---
 ### Point-to-Point
+
+![Point-to-Point](networking_img_res/topology_img_res/point-to-point_topology.png)
+
 * contain exactly two hosts (computers, switches or routers, servers ) connected back to back using a single piece of cable.
 * The receiving end of one host is connected to the sending end of the other and vice-versa. 
 * If the hosts are connected point-to-point logically, then they may have multiple intermediate devices. But the end hosts are unaware of the underlying network and see each other as if they are connected directly.
 
 ---
 ## Bus Topology 
+
+![Bus Topology](networking_img_res/topology_img_res/bus_topology.png)
+
 * All devices share a single communication line or cable.
 * Bus topology may have problems while multiple hosts sending data at the same time.
 * Bus topology either uses CSMA/CD technology or recognizes one host as Bus Master to solve the issue.
@@ -22,8 +28,12 @@ There are two approaches to network topology:
 
 __Point of failure:__
 * failure of the shared communication line can make all other devices stop functioning.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---
 ### Star Topology 
+
+![Star Topology](networking_img_res/topology_img_res/star_topology.png)
+
 * All hosts in Star topology are connected to a central device (hub) 
 * The hub uses a point-topoint connection. (ie; there exists a point to point connection between hosts and hub).
 * The hub device can be any of the following: 
@@ -41,6 +51,9 @@ __Point of failure:__
 
 ---
 ### Ring Topology 
+
+![Ring Topology](networking_img_res/topology_img_res/ring_topology.png)
+
 * each host machine connects to exactly two other machines, creating a circular network structure. 
 * When one host tries to communicate or send message to a host which is not adjacent to it, the data travels through all intermediate hosts. 
 * To connect one more host in the existing structure, the administrator may need only one more extra cable. 
@@ -51,6 +64,9 @@ __Point of failure:__
 
 ---
 ### Mesh Topology 
+
+![Mesh Topology](networking_img_res/topology_img_res/mesh_topology.png)
+
 * host is connected to one or multiple hosts. 
 * pointto-point connection with every other host or may also have hosts which are in point-to-point connection to few hosts only. 
 * Hosts in Mesh topology also work as relays for other hosts which do not have direct point-to-point links. 
@@ -61,6 +77,9 @@ __Point of failure:__
 
 ---
 ### Tree Topology (Hierarchical Topology) 
+
+![Tree Topology](networking_img_res/topology_img_res/tree_topology.png)
+
 * most common form of network topology in use presently. 
 * This topology imitates as extended Star topology and inherits properties of bus topology. 
 * divides the network in to multiple levels/layers of the network. 
@@ -76,6 +95,9 @@ __Point of failure:__
 
 ---
 ### Daisy Chain 
+
+![Daisy Chain](networking_img_res/topology_img_res/daisy_chain_topology.png)
+
 * connects all the hosts in a linear fashion. 
 * Similar to Ring topology, all hosts are connected to two hosts only, except the end hosts. 
 * if the end hosts in daisy chain are connected then it represents Ring topology. 
@@ -88,6 +110,9 @@ __Point of failure:__
 
 ---
 ### Hybrid Topology 
+
+![Hybrid Topology](networking_img_res/topology_img_res/hybrid_topology.png)
+
 * contains more than one topology. 
 * inherits merits and demerits of all the incorporating topologies. 
 * The combining topologies may contain attributes of Star, Ring, Bus, and Daisy-chain topologies. 
