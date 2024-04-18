@@ -1,150 +1,204 @@
 # Basic Git Commands
-------------------------------------------------------------------------------------------------------------------------------------------
-#### Username & Email Setup:	
-	Commands:
-		- Username: git config --global user.name "username"
-		- Email: git config --global user.email email@domain.com
 
-	Example:
-		git config --global user.name "Caitlin Stuart"
-		git config --global user.email "cstuart@email.com"
-------------------------------------------------------------------------------------------------------------------------------------------
-#### New Directory (Folder):	
-	Command:
-		- mkdir DirectoryName
+#### Username & Email Setup:
 
-	Example:
-		mkdir Git_folder
-------------------------------------------------------------------------------------------------------------------------------------------
-#### New File:	
-	Command:
-		- touch Filename
+Username: 
+```
+git config --global user.name "username"
+```
 
-	Example:
-		touch fileA
-------------------------------------------------------------------------------------------------------------------------------------------
-#### add:	
-	Command:
-		- git add –all
-		- git add .
-		- git add filename
-		  (Always add before commit)
-------------------------------------------------------------------------------------------------------------------------------------------
+Email: 
+```
+git config --global user.email email@domain.com
+```
+
+Example:
+```
+git config --global user.name "Caitlin Stuart"
+git config --global user.email "cstuart@email.com"
+```
+---
+#### Creating new directory (Folder):
+```
+mkdir DirectoryName
+```
+
+Example:
+```
+mkdir Git_folder
+```
+---
+#### Creating new File:	
+```
+touch Filename
+```
+
+Example:
+```
+touch fileA
+```
+---
+#### add:
+Adds files to the staging area.
+* add --all : Adds all changes throughout the entire repository, including new, modified, and deleted files, and stages them for commit.
+```
+git add –all
+```
+* add * : Adds all changes in the current directory, but doesn't include changes in subdirectories or untracked files.
+```
+git add *
+```
+* add . : Adds all changes in the current directory and its subdirectories, but doesn't include changes to untracked files.
+```
+git add .
+```
+* To add a specific file
+```
+git add filename
+```
+(Always add before commit)
+
+---
 #### commit:	
-	Command:
-		- git commit -m "[MESSAGE]"
+```
+git commit -m "[MESSAGE]"
+```
 
-	Example:
-		git commit -m "new contact page in website"
-		(must include a message that describes changes made since the last commit)
-------------------------------------------------------------------------------------------------------------------------------------------
-#### push:	
-	Command:
-		- git push [repository] [branch]
+Example:
+```
+git commit -m "new contact page in website"
+(must include a message that describes changes made since the last commit)
+```
+---
+#### push:
+```
+git push [repository] [branch]
+```
 
-	Example:
-		git push origin main
-------------------------------------------------------------------------------------------------------------------------------------------
+Example:
+```
+git push origin main
+```
+---
 #### pull:	
-	Command:
-		- git pull [repository] [branch]
+```
+git pull [repository] [branch]
+```
 
-------------------------------------------------------------------------------------------------------------------------------------------
+---
 #### Branch:	
-	Command:
-		- git branch branchname
-		  (Creates a new branch but will not checkout to it. You have to manually go to that branch)
-------------------------------------------------------------------------------------------------------------------------------------------
+```
+git branch branchname
+```
+(Creates a new branch but will not checkout to it. You have to checkout or switch to that branch)
+
+---
 #### Checkout:	
-	Command:
-		- git checkout branchname
-		  (Checkouts from the current branch to the branch specified)
-
-		- git checkout -b branchname
-		  (Creates a new branch and checkouts to it) 
-
-		- git checkout -b branchname origin/branchname
-		  (This will create a new local branch named branchname that tracks the origin/branchname remote branch.
-		  Usually done after cloaning an existing repo, ie when an existing repo with multiple branches are cloned there will not
-		  be any local branch that will keeps track of the changes happining to the remote , so when we check out of the main 
-    		  branch we will create a new local branch that tracks the remote branch)
-------------------------------------------------------------------------------------------------------------------------------------------
+* Checkout from the current branch to the branch specified.
+```
+git checkout branchname
+```
+* Creates a new branch and checkouts to it. 		  
+```
+git checkout -b branchname
+```		  
+* create a new local branch named branchname that tracks the origin/branchname remote branch.Usually done after cloaning an existing repo, ie when an existing repo with multiple branches are cloned there will not be any local branch that will keeps track of the changes happining to the remote , so when we check out of the main branch we will create a new local branch that tracks the remote branch
+```
+git checkout -b branchname origin/branchname
+```
+		
+---
 #### Switch:	
-	Command:
-		- git switch branchname
-		  (Switches from the current branch to the branch specified)
-
-		- git switch -c branchname
-		  (Creates a new branch and checkouts to it) 
-------------------------------------------------------------------------------------------------------------------------------------------
+```
+git switch branchname
+git switch -c branchname
+```
+		
+---
 #### Delete branch:	
-	Command:
-		- git branch -d branchname
-------------------------------------------------------------------------------------------------------------------------------------------
+```
+git branch -d branchname
+```
+---
 #### Delete file:	
-	Command:
-		- git rm filename
-		  (If the file has already been committed, you'll also need to commit the deletion:
-		  git commit -m "Deleted filename")
-------------------------------------------------------------------------------------------------------------------------------------------
+```
+git rm filename
+```
+(If the file has already been committed, you'll also need to commit the deletion: `git commit -m "Deleted filename"`)
+
+---
 #### Delete directories:	
-	Command:
-		- git rm directoryname
-		  (Only works if directory is empty. After running this command, you'll need to commit the deletion:
-		  git commit -m "Deleted directoryname")
+```
+git rm directoryname
+```
+(Only works if directory is empty. After running this command, you'll need to commit the deletion: `git commit -m "Deleted directoryname"`)
 
-
-		- git rm -r directoryname
-		  (If the directory contains files or other directories, you'll need to use the -r flag to recursively remove its contents)
-------------------------------------------------------------------------------------------------------------------------------------------
+* If the directory contains files or other directories, you'll need to use the -r flag to recursively remove its contents.
+```
+git rm -r directoryname
+```
+		
+---
 #### List all branches:	
-	Command:
-		- git branch
-		- git branch -a
-------------------------------------------------------------------------------------------------------------------------------------------
+```
+git branch
+```
+```
+git branch -a
+```
+---
 #### List all remote repos:	
-	Command:
-		- git remote -v
-------------------------------------------------------------------------------------------------------------------------------------------
+```
+git remote -v
+```
+---
 #### Merge:	
-	Command:
-		- git merge <branch_name>
-		  (Go to the source branch with checkout then specify the target branch in branch_name)
-------------------------------------------------------------------------------------------------------------------------------------------
-#### Status: 	
-	Command:
-		- git status
-		  (It shows information about files that have been modified, staged, or untracked.)
+```
+git merge <branch_name>
+```
+(Go to the source branch with checkout then specify the target branch in branch_name) 
 
-	Example:
-		$ git status
-		On branch newbranch
-		nothing to commit, working tree clean
-------------------------------------------------------------------------------------------------------------------------------------------
+---
+#### Status: 	
+It shows information about files that have been modified, staged, or untracked.
+```
+git status
+```
+Example:
+```
+$ git status
+On branch newbranch
+nothing to commit, working tree clean
+```
+---
 #### Path:	
-	Command:
-		Pwd
-------------------------------------------------------------------------------------------------------------------------------------------
-#### Traversing:	
-	Command:
-		cd <path>
-------------------------------------------------------------------------------------------------------------------------------------------
+`Pwd`
+
+---
+#### Navigation:	
+`cd <path>`
+
+---
 #### History:	
-	Command:
-		history
-		(Shows all the previously executed commands)
-------------------------------------------------------------------------------------------------------------------------------------------
+Shows all the previously executed commands.
+```
+history
+```
+		
+---
 #### Log:	
-	Command:
-		- git log
-		- git log --oneline: Displays each commit on a single line, showing only the abbreviated commit hash and the commit message.
-		- git log --graph: Displays the commit history as a text-based graph, showing the relationships between commits and branches.
-		- git log --author=<author>: Filters the commit history to only show commits by a specific author.
-		- git log --since=<date>: Filters the commit history to only show commits since a specific date.
-------------------------------------------------------------------------------------------------------------------------------------------
+```
+git log
+git log --oneline
+git log --graph
+git log --author=<author>
+git log --since=<date>
+```
+---
 #### setting upstream tracking branch:
-	Command:
-		git branch --set-upstream-to=origin/newbranch newbranch
-		(Setting the upstream branch for the local branch newbranch to the remote branch origin/newbranch.)
-------------------------------------------------------------------------------------------------------------------------------------------
+Setting the upstream branch for the local branch newbranch to the remote branch origin/newbranch.
+```
+git branch --set-upstream-to=origin/newbranch newbranch
+```
+---
 
