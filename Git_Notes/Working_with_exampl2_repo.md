@@ -1,5 +1,4 @@
 # Working with the example2 repository
----
 Creating a directory (myproject) > Initializing the git > Cloning the example2 repository > Creating some files in example2 > add & commit the files > pushing to main branch > creating new branch (newbranch)> creating some files in newbranch > add & commit the files > push to newbranch > merging the newbranch to main > creating new branch (newbranch2) > creating some files in newbranch2 > add & commit the files > push to newbranch2
 
 ---
