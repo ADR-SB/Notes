@@ -10,7 +10,7 @@ This repository contains my personal notes on various topics, organized by subje
 * [Networking Basics](Networking_Notes/)
    * [Introduction to Networking](Networking_Notes/Introduction_to_Networking.md)
    * [Network Topologies](Networking_Notes/Network_Topologies.md)
-   * [Network Cables](Networking_Notes/Network_Topologies.md)
+   * [Network Cables](Networking_Notes/Network_Cables.md)
    * [Network Hardware](Networking_Notes/Network_Hardware.md)
    * [Format of mac address](Networking_Notes/Format_of_mac_address.md)
    * [Types of Computer Networks](Networking_Notes/Types_of_Computer_Networks.md)
